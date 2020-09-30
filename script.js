@@ -66,8 +66,8 @@ $(document).ready(function() {
         if (secondNumber === ''){
             return;
         }else {
-            firstNumber = parseInt(firstNumber);
-            secondNumber = parseInt(secondNumber);
+            firstNumber = parseFloat(firstNumber);
+            secondNumber = parseFloat(secondNumber);
             answer = eval(firstNumber + operator + secondNumber);
             $("#result").text(answer);
         }
