@@ -31,10 +31,24 @@ $(document).ready(function() {
     //onclick event if operator is clicked
     $('.operator').on('click', function(event){
 
-        //set operator variable equal to value of operator button that was clicked
         event.preventDefault();
-        operator = $(this).val();
-        $('#operator').text(operator);
+
+        //set operator variable equal to value of operator button that was clicked if answer is empty
+        //if answer has been found already, use answer as first number then set operator variable equal to the value of the operator button that was clicked
+        if (answer === ''){
+            operator = $(this).val();
+            $('#operator').text(operator);
+        } else {
+            $('#first-number, #second-number, #operator, #result').empty();
+            firstNumber = answer;
+            secondNumber = '';
+            operator = $(this).val();
+            answer = '';
+
+            $('#first-number').text(firstNumber);
+            $('#operator').text(operator);
+        }
+
 
         //if operator is '^', replace with '**' for exponent calculation
         if (operator === '^'){
