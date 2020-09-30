@@ -1,8 +1,8 @@
 # jQuery Calculator
 
-## File
+## Deployed Project
 
-* [`jquery-calculator-starter`](Unsolved/jquery-calculator.html)
+* [`jQuery Calculator`](https://tutchings.github.io/jQueryCalculator/)
 
 ## Instructions
 
