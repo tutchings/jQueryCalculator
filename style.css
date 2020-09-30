@@ -2,3 +2,11 @@
 button > span {
     font-size: 2.5rem;
 }
+
+#button-period span {
+    padding: 5.9px;
+}
+
+#button-equal {
+    width: 100px;
+}
